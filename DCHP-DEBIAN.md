@@ -1,13 +1,13 @@
 ## Indice
-[1.Inicio](#Introduccion)
+[1.Inicio](Introducción)
 
-[2.Configuracion de la dirección ip](#2.Configuraciondeladirecciónip)
+[2.Configuracion de la dirección ip](2.Configuraciondeladirecciónip)
 
 [3.Instalacion del servidor](#Instalaciondelservidor)
  
-[4.Configuración de la tarjeta que debe escuchar](#Introduccion)
+[4.Configuración de la tarjeta que debe escuchar](Introduccion)
 
-[5.Ejemplo práctico](#Ejemplopráctico)
+[5.Ejemplo práctico](Ejemplopráctico)
 ## 1.Introducción
 En este documento vamos a instalar un servidor DHCP en Debian. El nombre del software es isc-dhcp-server.
 ## 2.Configuracion de la dirección ip
