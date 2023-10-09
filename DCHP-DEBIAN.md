@@ -45,8 +45,8 @@ editandolo por ejemplo con el editor de texto **nano**.
 7-Ponemos el rango de ip para asignar
 ![1.imagen](img/7.PNG)
 8-Ponemos la mac de la red interna y hacemos la reserva de la ip 192.168.xx.60
-![1.imagen](img/8.PNG)
-9-Ahora iniciamos es isc-dhcp-server
+![1.imagen](img/Captura2.PNG)
+9-Ahora iniciamos el isc-dhcp-server
 ![1.imagen](img/9.PNG)
 10-Entramos en /var/lib/dhcp/ y hacemos un ls
 ![1.imagen](img/10.PNG)
@@ -54,5 +54,13 @@ editandolo por ejemplo con el editor de texto **nano**.
 ![1.imagen](img/11.PNG)
 12-Ahora regresamos al ubuntu y hacemos un cat de dhcpd.leases para ver que se le asigno la ip al windows10
 ![1.imagen](img/12.PNG)
-
-
+Instalamos el paquete nsyslog
+![1.imagen](img/Captura.PNG)
+Hacemos tail -f /var/log/syslog para ver lo que tenemos en el pauete syslog
+![1.imagen](img/Captura1.PNG)
+O tambien podemos hacer el mismo comando pero añadiendo | grep dhcp para añadir un filtro
+![1.imagen](img/perro.PNG)
+Por ultimo reiniciamos el servicio del que queramos encontrar los errores. Y los comprobamos con el comando journalctl -u isc-dhcp-server.service 
+![1.imagen](img/hugo.PNG)
+Aqui vemos que la reserva funciono
+![1imagen](img/2captura.PNG)
